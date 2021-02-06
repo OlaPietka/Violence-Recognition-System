@@ -3,13 +3,18 @@ Violence Recognition System is thesis project that I've been apart of. We are us
 
 **Every module is described in separate readme in module directory.**
 
+## Results
+We manage to achieve:
+* 88% of accuracy with our solution
+* prediction every 1.5 second (with 30 FPS and 4 threads on CPU)
+* 3 percentage points of error
+
 ## Dataset
 We used [RWF-2000](https://github.com/mchengny/RWF2000-Video-Database-for-Violence-Detection) dataset for training our models.
 
 <p align="left">
   <img width="600" height="500" src="https://i.imgur.com/hCx7gbU.png">
 </p>
-
 
 ## Directories structure
 * [doc](./doc) – documentation
