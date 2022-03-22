@@ -1,7 +1,7 @@
 # Violence Recognition System
-Violence Recognition System is thesis project that I've been apart of. We are using variant of neural networks and computer vision techniques to detect violence on sequence of frames.
+With use of recurrent neural networks, optical flow, image segmentation and machine learning methods, the trained model is capable of detecting violence on sequence of frames with accuracy of around 88% (with 3 percentage points of error).
 
-**Every module is described in separate readme in module directory.**
+**Every module is described separately in module directory.**
 
 ## Results
 We manage to achieve:
