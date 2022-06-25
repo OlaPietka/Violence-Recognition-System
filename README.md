@@ -9,6 +9,42 @@ We manage to achieve:
 * prediction every 1.5 second (with 30 FPS and 4 threads on CPU)
 * 3 percentage points of error
 
+### [Sample image transormations](./tools)
+#### Optical flow with OpenCV
+![](https://i.imgur.com/B5mFQol.png)
+
+#### Optical flow with RAFT
+![](https://i.imgur.com/IMlqSU9.png)
+
+#### Segmenation with Keras
+![](https://i.imgur.com/ngDAvEL.png)
+
+### Moduls simple description and results
+#### [Module.VRN](./src/Module.VRN)
+Violence Recognition Network that uses VGG16 network as base and LSTM as one of the top layers
+![](https://i.imgur.com/L2GsPSA.png)
+
+#### [Module.FGN](./src/Module.FGN)
+Flow Gated Network module based on [Violence Detection project](https://github.com/mchengny/RWF2000-Video-Database-for-Violence-Detection)
+![](https://i.imgur.com/GimUqDX.png)
+
+#### [Module.DSDN](./src/Module.DSDN)
+Dangerous Sound Detection Network module for gunshot detection using VGG16 and transformation to spectrograms
+![](https://i.imgur.com/7L6713J.png)
+
+#### [Module.DIDN](./src/Module.DIDN)
+Dangerous Item Detection Network based trained with [YOLOv3](https://pjreddie.com/darknet/yolo/) and translated to Tensorflow library with usage of [tool used for translation](https://github.com/hunglc007/tensorflow-yolov4-tflite)
+
+## System architecture
+### Sequence view
+![](https://user-images.githubusercontent.com/36880623/175791360-81831d18-8b34-4e05-b6ee-4438e8a8b39e.png)
+
+### Main system loop process
+![image](https://user-images.githubusercontent.com/36880623/175791377-7b0e4d3a-7bd6-4727-8ab4-d6814b9b150e.png)
+
+### Deployment diagram
+![image](https://user-images.githubusercontent.com/36880623/175791401-bba7d20e-a545-4a67-8227-5f7d83c701d0.png)
+
 ## Dataset
 We used [RWF-2000](https://github.com/mchengny/RWF2000-Video-Database-for-Violence-Detection) dataset for training our models.
 
