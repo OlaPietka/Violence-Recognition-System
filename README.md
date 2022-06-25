@@ -9,30 +9,30 @@ We manage to achieve:
 * prediction every 1.5 second (with 30 FPS and 4 threads on CPU)
 * 3 percentage points of error
 
-### [Sample image transormations](./tools)
-#### Optical flow with OpenCV
+## Used image transormations
+### [Optical flow with OpenCV](./tools/OpenCV)
 ![](https://i.imgur.com/B5mFQol.png)
 
-#### Optical flow with RAFT
+### [Optical flow with RAFT](./tools/RAFT)
 ![](https://i.imgur.com/IMlqSU9.png)
 
-#### Segmenation with Keras
+### [Segmenation with Keras](./tools/Segmentation)
 ![](https://i.imgur.com/ngDAvEL.png)
 
-### Moduls simple description and results
-#### [Module.VRN](./src/Module.VRN)
+## Moduls sample results
+### [Module.VRN](./src/Module.VRN)
 Violence Recognition Network that uses VGG16 network as base and LSTM as one of the top layers
 ![](https://i.imgur.com/L2GsPSA.png)
 
-#### [Module.FGN](./src/Module.FGN)
+### [Module.FGN](./src/Module.FGN)
 Flow Gated Network module based on [Violence Detection project](https://github.com/mchengny/RWF2000-Video-Database-for-Violence-Detection)
 ![](https://i.imgur.com/GimUqDX.png)
 
-#### [Module.DSDN](./src/Module.DSDN)
+### [Module.DSDN](./src/Module.DSDN)
 Dangerous Sound Detection Network module for gunshot detection using VGG16 and transformation to spectrograms
 ![](https://i.imgur.com/7L6713J.png)
 
-#### [Module.DIDN](./src/Module.DIDN)
+### [Module.DIDN](./src/Module.DIDN)
 Dangerous Item Detection Network based trained with [YOLOv3](https://pjreddie.com/darknet/yolo/) and translated to Tensorflow library with usage of [tool used for translation](https://github.com/hunglc007/tensorflow-yolov4-tflite)
 
 ## System architecture
